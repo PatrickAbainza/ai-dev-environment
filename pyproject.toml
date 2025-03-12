@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "roo-cline-ai-env"
+version = "0.1.0"
+description = "Roo Cline AI Development Environment with integrated LLM and database support"
+authors = ["Roo <roo@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+Django = "^3.2"
+langgraph = "^1.0.0"
+langchain = "^0.0.1"  # placeholder version
+openai = "^0.27.0"
+anthropic = "^0.3.0"
+googlegemini = { version = "*", optional = true }
+ollama = { version = "*", optional = true }
+deepseek-r1 = { version = "*", optional = true }
+psycopg2-binary = "^2.9.6"
+redis = "^4.5.0"
+celery = "^5.2.7"
+pydantic = "^1.10.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+mypy = "^0.971"
+flake8 = "^5.0.4"
+pytest = "^7.2.0"
+asyncpg = "^0.27.0"
+
+[build-system]
+requires = ["poetry>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
